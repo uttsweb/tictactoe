@@ -29,15 +29,15 @@ var ticTacToe = (function() {
 
     //----------- GET USER INFO ------------------------------------------------
     function getUserInfo() {
-        firstUser.name = prompt("Player 1 name", "Uttam");
+        firstUser.name = prompt("PLEASE ENTER FIRST PLAYER'S NAME");
         while (firstUser.name == null || firstUser.name.replace(/ /g, '') === '') {
-            firstUser.name = prompt("NAME FIELD CANNOT BE BLANK", "Uttam");
+            firstUser.name = prompt("PLEASE ENTER SECOND PLAYER'S NAME");
         }
 
-        secondUser.name = prompt("Player 2 name", "Bhandari")
+        secondUser.name = prompt("Player 2 name")
 
         while (secondUser.name == null || firstUser.name.toUpperCase() == secondUser.name.toUpperCase() || secondUser.name.replace(/ /g, '') === '') {
-            secondUser.name = prompt("NAME FIELD CANNOT HAS SAME NAME", "Uttam");
+            secondUser.name = prompt("NAME FIELD CANNOT HAS SAME NAME");
         }
         document.getElementById("playerOne").innerHTML = "[" + " " + firstUser.name.toUpperCase() + " " + "]";
         document.getElementById('playerTwo').innerHTML = "[" + " " + secondUser.name.toUpperCase() + " " + "]";
