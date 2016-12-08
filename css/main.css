@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Copse');
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Copse', 'Times New Roman', serif;
+    background: red url("../img/back.jpg") no-repeat fixed center;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: orange;
+    margin-top: 80px;
+}
+
+h2 {
+    text-align: center;
+    color: orange;
+}
+
+h4 {
+    text-align: center;
+}
+
+.main {
+    margin: 10px auto;
+    width: 400px;
+}
+
+.main2 {
+    margin: 20px auto;
+    width: 800px;
+}
+
+.main2 table {
+    width: 300px;
+    height: 300px
+}
+
+.t_row {
+    text-align: center;
+    border: 2px solid orange;
+    font-size: 60px;
+    color: black;
+    background: orange;
+    height: 80px;
+    width: 80px;
+}
+
+.button {
+    background: linear-gradient(to left, #D31027, #EA384D);
+    color: #fff;
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: orange;
+    color: #fff;
+}
+
+.players {
+    color: orange;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.main3 {
+    width: 200px;
+    height: 100px;
+    margin-top: 10px;
+    float: left;
+}
+
+.colm1 {
+    text-align: center;
+    color: orange;
+    font-size: 24px;
+}
+
+.colm2 {
+    text-align: center;
+    color: red;
+    font-size: 24px;
+}
+
+.ticDiv {
+    width: 200px;
+    float: left;
+    margin-left: 45px;
+    margin-top: 10px;
+}
+
+.t_row {
+    border-radius: 10px;
+    border: red;
+    padding-top: 7px;
+    background: #D31027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #D31027, #EA384D);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #D31027, #EA384D);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.info {
+    color: black;
+    width: 200px;
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    animation: blinker 2s linear infinite;
+    background: orange;
+    text-align: center;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.button2 {
+    float: left;
+    margin-top: 260px;
+    margin-left: 150px;
+}
+
+.button2 {
+    background: red;
+    color: #fff;
+    width: 60px;
+    padding: 2px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    float: left;
+    margin-top: 260px;
+    margin-left: 150px;
+}
+
+.button2:hover {
+    background: orange;
+    color: #fff;
+}
+
+.wincolor {
+    background: orange;
+}
+
+.pointerEvents {
+    pointer-events: none;
+}
+
+.table {
+    margin: 10px auto;
+    width: 50%;
+    color: black;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    display: table;
+}
+
+.row {
+    display: table-row;
+    background: #f6f6f6;
+}
+
+.row:nth-child(odd) {
+    background: #e9e9e9;
+}
+
+.row:nth-child(1) {
+    background: linear-gradient(to left, #D31027, #EA384D);
+}
+
+.header {
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.cell {
+    padding: 6px 12px;
+    display: table-cell;
+}
+
+#content {
+    display: none;
+}
+
+input[type="text"] {
+    color: white;
+    background: red;
+    text-shadow: 0 0 0 #000;
+    padding: 6px;
+    position: absolute;
+    top: 529px;
+    left: 910px;
+    width: 50px;
+    cursor: pointer;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+input:focus+div#content {
+    display: block;
+}
